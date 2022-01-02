@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
-import LoginForm from './src/components/LoginForm';
+import Greet from './src/components/Greet';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Welcome to my app!</Text>
-      <LoginForm />
+      <Greet firstname="Richard" lastname="Venegas" />
+      <Greet />
     </View>
   );
 }
