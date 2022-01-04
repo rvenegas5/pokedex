@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native';
-import Greet from './src/components/Greet';
+import React from "react";
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import NavigationStack from "./src/navigation/NavigationStack";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Welcome to my app!</Text>
-      <Greet firstname="Richard" lastname="Venegas" />
-      <Greet />
-    </View>
+    <NavigationContainer>
+      <NavigationStack />
+    </NavigationContainer>
   );
 }
 
